@@ -3,37 +3,37 @@
     {
       "id": "001",
       "title": "首页",
-      "url": "http://www.tugoo.net/tongcheng.aspx",
+      "url": "#",
       "imageUrl": ""
     },
     {
       "id": "002",
       "title": "土购生鲜",
-      "url": "http://www.tugoo.net/news.aspx",
+      "url": "#",
       "imageUrl": ""
     },
     {
       "id": "003",
       "title": "新闻资讯",
-      "url": "http://www.tugoo.net/tongcheng.aspx",
+      "url": "#",
       "imageUrl": ""
     },
     {
       "id": "004",
       "title": "特价商品",
-      "url": "http://www.tugoo.net/tongcheng.aspx",
+      "url": "#",
       "imageUrl": ""
     },
     {
       "id": "005",
       "title": "企业直采",
-      "url": "http://www.tugoo.net/tongcheng.aspx",
+      "url": "#",
       "imageUrl": ""
     },
     {
       "id": "006",
       "title": "商家入驻",
-      "url": "http://www.tugoo.net/tongcheng.aspx",
+      "url": "#",
       "imageUrl": ""
     }
   ],

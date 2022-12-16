@@ -62,11 +62,11 @@ header .top_search_container .container .search button {
   border-color: orange;
   font-size: 14px;
 }
-header .top_banner_container {
-  margin-top: -3rem;
-}
 header .top_banner_container .swiper-container {
   width: 100%;
+}
+header .top_banner_container .swiper-container .swiper-pagination {
+  bottom: 120px;
 }
 footer {
   margin-top: 1rem;

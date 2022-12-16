@@ -6,9 +6,6 @@
   font-size: @fontSize;
 }
 
-
-
-
 .toBlock(@w: 0px, @h: 0px) {
   width: @w;
   height: @h;
@@ -85,10 +82,11 @@ header {
 
   // 轮播图
   .top_banner_container {
-    margin-top: -3rem;
-
     .swiper-container {
       width: 100%;
+      .swiper-pagination{
+        bottom: 120px;
+      }
     }
   }
 }
