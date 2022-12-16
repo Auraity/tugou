@@ -1,0 +1,208 @@
+@import 'tools';
+@base-color: #929292;
+
+// 设置字体
+.fz(@fontSize) {
+  font-size: @fontSize;
+}
+
+
+
+
+.toBlock(@w: 0px, @h: 0px) {
+  width: @w;
+  height: @h;
+}
+
+header {
+  .top_nav {
+    height: 3rem;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    line-height: 3rem;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    .container {
+      .center(1200);
+
+      li {
+        float: left;
+
+        a {
+          color: @base-color;
+          padding: 0 10px;
+          border-right: 1px solid #b1b1b1;
+
+          span {
+            color: red;
+          }
+        }
+
+        // 内层选择器前面的 & 符号就表示对父选择器的引用。
+        &:last-of-type {
+          a {
+            border-right: 0 none;
+          }
+        }
+      }
+    }
+
+    .right_nav {
+      float: right;
+    }
+  }
+
+  .top_search_container {
+    .container {
+      .center(800px);
+      box-sizing: border-box;
+
+      .left-icon {
+        padding: 30px;
+      }
+
+      .search {
+        padding-top: 35px;
+        .flexCenter();
+
+        input {
+          .toBlock(20rem, 3rem);
+          border-color: orange;
+          padding: 0 1rem;
+          .fz(16px);
+        }
+
+        button {
+          .toBlock(3.5rem, 3rem);
+          border-color: orange;
+          .fz(14px);
+        }
+      }
+    }
+  }
+
+  // 轮播图
+  .top_banner_container {
+    margin-top: -3rem;
+
+    .swiper-container {
+      width: 100%;
+    }
+  }
+}
+
+// 页脚
+footer {
+  margin-top: 1rem;
+
+  .security {
+    background: #af2525;
+    padding: 30px;
+    height: 70px;
+    line-height: 70px;
+    overflow: hidden;
+    .wrap {
+      width: 1200px;
+      margin: 0 auto;
+      text-align: left;
+      li {
+        width: 25%;
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        i{
+          display: inline-block;
+          width: 70px;
+          height: 70px;
+          background: url(../res/images/service.png) no-repeat;
+          margin-right: 20px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .foot{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 22px;
+    padding: 20px 0;
+    em{
+      padding-right: 30px;
+      a{
+        margin-right: 8px; 
+      img{
+        height: 42px;
+      }
+      }
+    }
+    p{
+      a{
+        margin-right: .5rem;
+        color: #000;
+      }
+    }
+  }
+}
+
+// 两个侧栏
+.bar(@width,@height,@bgColor,@isLeft){
+  width: @width;
+  height: @height;
+  background-color: @bgColor;
+  position: fixed;
+  @{isLeft}: 0;
+  top: 50%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: -@height/2;
+  z-index: 999;
+}
+.left-bar {
+  .bar(3rem,13rem,rgba(255, 0, 0, 0.5),left);
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+  li{
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(44, 44, 44, 0.3);
+    a{
+      color: #fff;
+    }
+  }
+  li:hover{
+    background-color: rgba(249, 95, 60, 0.7);
+    a{
+      color: yellow;
+    }
+  }
+}
+
+.right-bar {
+  .bar(3rem,10rem,rgba(255, 0, 0, 0.5),right);
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  li{
+    padding: .2rem;
+    box-sizing: border-box;
+    border-radius: 0.2rem;
+    img{
+      .toBlock(1.5rem,auto);
+    }
+    a{
+      color: #fff;
+    }
+  }
+  li:hover{
+    background-color: rgba(221, 249, 60, 0.7);
+    a{
+      color: red;
+    }
+  }
+}

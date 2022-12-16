@@ -1,0 +1,51 @@
+// 封装元素水平垂直方向元素居中
+.flexCenter(@direction: row) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+// 块状显示
+.toBlock(@width: 0px, @height: 0px) {
+  display: block;
+  width: @width;
+  height: @height;
+}
+
+// 封装绝对定位到右上角
+.absolute_right_top(@right: 0px, @top: 0px) {
+  position: absolute;
+  right: @right;
+  top: @top;
+}
+
+// 封装绝对/相对定位
+.relative(@left:0px,@top:0px)
+{ position: relative;
+left: @left;
+top: @top;
+}
+.absolute(@left:0px,@top:0px)
+{ position: absolute;
+left: @left;
+top: @top;
+}
+// 设置上下间隙，居中对齐
+.centertop(@top:0) {
+  margin: @top auto;
+}
+// 居中
+.center(@width) {
+  width: @width;
+  margin: 0 auto;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.flexAround(@justifyContent:space-around){
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

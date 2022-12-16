@@ -1,0 +1,42 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.category-nav {
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.category-nav a {
+  color: red;
+}
+.category-nav li {
+  height: 40px;
+  line-height: 40px;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d6d6d6;
+}
+.category-nav li:hover {
+  background-color: rgba(195, 195, 195, 0.2);
+}
+.category-nav .category-menu {
+  width: 10rem;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+.category-nav .category-menu .category_sub_menu {
+  overflow: hidden;
+  width: 0;
+  height: 400px;
+  background-color: rgba(238, 238, 238, 0.7);
+  position: absolute;
+  left: 10rem;
+  top: 0px;
+  transition: all 500ms;
+}

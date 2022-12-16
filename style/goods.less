@@ -1,0 +1,66 @@
+@import "tools";
+main {
+  margin-top: 3rem;
+  .goods{
+    .item {
+      .addr {
+        width: 100%;
+        height: 160px;
+        background: no-repeat center;
+        background-size: cover;
+        margin-top: 2rem;
+      }
+      .title{
+        text-align: center;
+        padding: 20px;
+        color: orange;
+        font-size: 2rem;
+      }
+      .goods-list {
+        width: 1200px;
+        margin: 0 auto;
+        .flexAround();
+        .goods-item{
+          text-align: center;
+          box-shadow: 0 0 10px grey;
+          padding: 1rem;
+          margin: .5rem;
+          width: 220px;
+          height: 280px;
+          border-radius: .5rem;
+          box-sizing: border-box;
+          a{
+            color: orange;
+            font-size: 1rem;
+            .image {
+              .toBlock(100px,100px);
+              object-fit: cover;
+              .centertop();
+              border-radius: 10%;
+            }
+            .name{
+              padding: 1rem 0 0;
+            }
+            .price {
+              padding: 0 0 1rem;
+            }
+            button {
+              .toBlock(10rem,2rem);
+              .centertop();
+              border-color: orange;
+              font-size: 1rem;
+              margin: 0 auto .5rem;
+              color: orange;
+              &:hover{
+                color: #f00;
+              }
+            }
+          }
+          &:hover{
+            box-shadow: 0 0 10px orange;
+          }
+        }
+      }
+    }
+  }
+}

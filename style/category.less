@@ -1,0 +1,36 @@
+     @import 'tools';
+.category-nav{
+  z-index: 3;//设置元素的堆叠次序
+  background-color: rgba(255,255,255,0.7);
+  a{
+    color: red;
+  }
+  .absolute(0px,0px);
+  li{
+    height: 40px;
+    line-height: 40px;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d6d6d6;
+    &:hover{
+      background-color: rgba(195, 195, 195, 0.2);
+    }
+  }
+  
+  // 一级菜单
+  .category-menu{
+    width: 10rem;
+    height: 400px;
+    background-color: rgba(255,255,255,0.7);
+    .relative();
+    // 二级菜单
+    .category_sub_menu{
+      overflow: hidden;
+      width: 0;
+      height: 400px;
+      background-color: rgba(238, 238, 238, 0.7);
+      .absolute(10rem,0px);
+      transition: all 500ms;//过度效果，all所有属性都将获得过度效果
+    }
+  }
+}

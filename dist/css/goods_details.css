@@ -1,0 +1,47 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+main {
+  width: 1200px;
+  margin: 9rem auto 0;
+  overflow: hidden;
+}
+main .goods-details .goods-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  background: no-repeat center;
+  background-size: cover;
+  border-radius: 0.5rem;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+main .goods-details .goods-info {
+  width: 500px;
+  height: 400px;
+  padding: 1rem;
+}
+main .goods-details .goods-info .title {
+  padding: 3rem;
+  text-align: center;
+  font-size: 1rem;
+}
+main .goods-details .goods-info p {
+  text-align: center;
+  padding: 2rem;
+}
+main .goods-details .goods-info p .price {
+  font-weight: bold;
+  color: red;
+}
+main .goods-details .goods-info .btnPay {
+  display: block;
+  width: 10rem;
+  height: 2rem;
+  margin: 1rem auto;
+  background-color: orange;
+  color: white;
+  border-radius: 0.5rem;
+}

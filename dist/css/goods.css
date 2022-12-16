@@ -1,0 +1,71 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+main {
+  margin-top: 3rem;
+}
+main .goods .item .addr {
+  width: 100%;
+  height: 160px;
+  background: no-repeat center;
+  background-size: cover;
+  margin-top: 2rem;
+}
+main .goods .item .title {
+  text-align: center;
+  padding: 20px;
+  color: orange;
+  font-size: 2rem;
+}
+main .goods .item .goods-list {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main .goods .item .goods-list .goods-item {
+  text-align: center;
+  box-shadow: 0 0 10px grey;
+  padding: 1rem;
+  margin: 0.5rem;
+  width: 220px;
+  height: 280px;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+main .goods .item .goods-list .goods-item a {
+  color: orange;
+  font-size: 1rem;
+}
+main .goods .item .goods-list .goods-item a .image {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 10%;
+}
+main .goods .item .goods-list .goods-item a .name {
+  padding: 1rem 0 0;
+}
+main .goods .item .goods-list .goods-item a .price {
+  padding: 0 0 1rem;
+}
+main .goods .item .goods-list .goods-item a button {
+  display: block;
+  width: 10rem;
+  height: 2rem;
+  margin: 0 auto;
+  border-color: orange;
+  font-size: 1rem;
+  margin: 0 auto 0.5rem;
+  color: orange;
+}
+main .goods .item .goods-list .goods-item a button:hover {
+  color: #f00;
+}
+main .goods .item .goods-list .goods-item:hover {
+  box-shadow: 0 0 10px orange;
+}

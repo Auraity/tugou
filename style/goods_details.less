@@ -1,0 +1,50 @@
+@import "tools";
+
+main {
+  width: 1200px;
+  margin: 9rem auto 0;
+  overflow: hidden;
+
+  .goods-details {
+    .goods-img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      background: no-repeat center;
+      background-size: cover;
+      border-radius: .5rem;
+      .relative();
+
+    }
+
+    .goods-info {
+      width: 500px;
+      height: 400px;
+      padding: 1rem;
+
+      .title {
+        padding: 3rem;
+        text-align: center;
+        font-size: 1rem;
+      }
+
+      p {
+        text-align: center;
+        padding: 2rem;
+
+        .price {
+          font-weight: bold;
+          color: red;
+        }
+      }
+
+      .btnPay {
+        .toBlock(10rem, 2rem);
+        .centertop(1rem);
+        background-color: orange;
+        color: white;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}

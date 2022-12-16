@@ -1,0 +1,40 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.nav_container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: orange;
+}
+.nav_container .nav {
+  width: 1200;
+  margin: 0 auto;
+  line-height: 3rem;
+}
+.nav_container .nav li {
+  text-align: center;
+  float: left;
+  border-right: 1px solid #c0c0c0;
+}
+.nav_container .nav li a {
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.nav_container .nav li a .icon {
+  position: absolute;
+  right: -18px;
+  top: -10px;
+}
+.nav_container .nav li:last-of-type {
+  border-right: 0 none;
+}
+.nav_container .nav li:hover a {
+  color: #dbdf1e;
+}

@@ -1,0 +1,49 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.dialog {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 1rem;
+  width: 30rem;
+  height: 25rem;
+  box-shadow: 0 0 5px grey;
+  padding: 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  margin: -12.75rem 0 0 -15rem;
+}
+.dialog .close-btn {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border-color: orange;
+  position: relative;
+  left: 26rem;
+  top: 0rem;
+}
+.dialog input {
+  box-sizing: border-box;
+  display: block;
+  width: 20rem;
+  height: 3rem;
+  outline: 0 none;
+  border-color: orange;
+  padding: 0 1rem;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  color: orange;
+}
+.dialog .btn {
+  display: block;
+  width: 10rem;
+  height: 3rem;
+  margin: 3rem auto;
+  color: orange;
+  border-color: orange;
+  border-radius: 0.5rem;
+}
