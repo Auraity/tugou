@@ -98,7 +98,7 @@
   // 轮播图
   Page.prototype.banner = function () {
     new Swiper('.swiper-container', {
-      loop: false,
+      loop: true,
       // 自动播放
       autoplay: {
         delay: 3000,
