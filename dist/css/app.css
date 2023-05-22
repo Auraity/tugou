@@ -66,7 +66,7 @@ header .top_banner_container .swiper-container {
   width: 100%;
 }
 header .top_banner_container .swiper-container .swiper-pagination {
-  bottom: 120px;
+  bottom: 20px;
 }
 footer {
   margin-top: 1rem;
