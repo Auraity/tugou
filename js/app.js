@@ -18,9 +18,11 @@
       var id = temp[1].replace('id=', '');
       // console.log(urlStr, temp, type, id,11);
       this.loadData(url).then(function (res) {
-        // console.log(res);
         // 获取首页传过来的商品的具体数据
-        var goodsDetails = res.goods[type].des[id];
+        // var goodsDetails = res.goods[type].des[id];
+        // 根据type和id 赛选 获取商品的具体数据,
+        let types = res.goods.filter(item => item.type == type)[0];
+        const goodsDetails = types.des.filter(item => item.id == id)[0];
         this.goodsInfo(goodsDetails);
 
         this.loginRegister();
